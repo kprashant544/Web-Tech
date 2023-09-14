@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query</title>
+</head>
+<style>
+    .box {
+        display: none;
+    }
+
+    @media screen and (max-width:575px){
+        #box1{
+            background-color: red;
+            height: 200px;
+            width: 200px;
+            color: white;
+            display: block;
+        }
+    }
+    @media screen and (min-width:576px) and (max-width:767px){
+        #box2{
+            background-color: blue;
+            height: 200px;
+            width: 200px;
+            color: white;
+            display: block;
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px){
+        #box3{
+            background-color: orange;
+            height: 200px;
+            width: 200px;
+            color: white;
+            display: block;
+        }
+    }
+        @media screen and (min-width:992px) and (max-width:1999px){
+        #box4{
+            background-color:  rgb(17, 247, 255);
+            height: 200px;
+            width: 200px;
+            display: block;
+        }
+    }
+</style>
+
+<body>
+    <div class="box" id="box1">Mobile</div>
+    <div class="box" id="box2">Tablet</div>
+    <div class="box" id="box3">Small Laptop</div>
+    <div class="box" id="box4">Laptop/Desktop</div>
+</body>
+
+</html>
